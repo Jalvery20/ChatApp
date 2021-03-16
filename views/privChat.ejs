@@ -1,0 +1,53 @@
+<%-include("include/_header")%>
+<link rel="stylesheet" href="css/chat.css">
+<script src="js/jquery.js"></script>
+<script src="js/4.js"></script>
+
+</head>
+<body>
+    <span ><%=send._id%></span>
+    <div class="chat-container m-auto mt-3 co-shadow">
+        <header class="container-fluid bg-primary p-3 text-shadow co-shadow text-white">
+            <div class="row">
+                <div class="col-12 pl-4 text-center"><h4>🐬My Chat</h4></div>
+                <%if(locals.send){%><h4> Welcome <span id="user" class="text-warning"><%=send.username%></span> </h4></div><%}%>
+                  
+                  <%if(locals.data){%>
+                    
+                    <h4> Chatting   <span id="user" class="text-warning">🙏<%=data.name%></span> </h4></div>
+                   <%}%>
+            </div>
+            
+        </header>
+        
+        <div class="chat-section ">
+            <div class="main-wrapper p-3">
+                <div class="chat-content">
+                    <h4 id="textWho" class="text-center text-info text-shadow mb-2">Everybody`s Group</h4>
+                    <div class="message">
+                        
+                             
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                     
+    </div>
+    
+    <button id="collbtn" data-toggle="collapse" data-target="#actives" class="btn btn-primary w-25 text-warning text-shadow">Active Users</button>
+    <div  id="actives" style="position: absolute;width:20%;" class="collapse bg-dark text-white">
+        <p>😢There is no active users!</p> 
+        </div > 
+      
+    <form class="msg-tex bg-primary">
+        <input type="text" name="msg" id="msg" class="co-shadow" placeholder="Type Message Here..." autocomplete="off">
+        <button  class="btn btn-outline-primary co-shadow">
+            <i id="chat-icon" class="bi bi-chat-fill text-warning text-shadow"> Send</i>
+        </button>
+    </form>
+    <div id="store"></div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

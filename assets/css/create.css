@@ -1,0 +1,34 @@
+html, body {
+	background-image: url("/css/1.jpg");
+	background-repeat: space;
+}
+
+#contIcon{
+	font-size:80px;
+	color:rgb(39, 38, 38);
+	
+}
+img{
+	margin-top:10px;
+	height:100px;
+	width:100px;
+	box-shadow:0px 0px 15px black;
+}
+img:hover{
+	cursor:pointer;
+	opacity:0.7;
+}
+i:hover{
+	cursor:pointer;
+	opacity:0.2;
+}
+
+#alert{
+	
+	font-size: 30px;
+	
+}
+#already:hover{
+	opacity: 0.6;
+}
+

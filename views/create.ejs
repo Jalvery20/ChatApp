@@ -1,0 +1,40 @@
+<%-include("include/_header")%>
+<link rel="stylesheet" href="css/create.css">
+</head>
+<body>
+    <div id="header" class="container-fluid p-2 ">
+        <h1 class="text-white text-center text-shadow">🐬My Chat-App</h1>   
+    </div>
+    <%if(locals.msg){%>
+        <div class="container-fluid text-center" id="alert"><span  class="text-danger"><%=msg%>!</span></div>
+        </div>
+        <%}%>
+    <div class="container-fluid text-center" id="already"><a href="/" style="font-size: 20px;" class="text-warning text-shadow text-decoration-none text-center">If you`re already a user click here!</a></div>
+            
+    
+    <div id="Cont2" class="container p-5 mg-auto">
+        <form  method="POST" action="/" class="container-fluid co-shadow text-shadow text-white ">
+            <div>
+               
+                <h4 class="text-center p-2">Add your perfil photo<div class="text-center w-100 mt-2"><label  for="file"> <i id="contIcon" class="bi bi-person-circle"></i></label></div></h4>
+                
+                <input  name="photo" style="display:none" type="file" id="file">
+    
+                <div class="text-center mt-1 pb-5">
+                    <h4 >Perfil Name:</h4>
+                    <input class="w-50" autocomplete="false" minlength="5" required autocorrect="false" type="text" name="name">
+                    <h4 class="mt-2" >Email:</h4>
+                    <input class="w-50" autocomplete="false" required autocorrect="false" type="email" name="email">
+                    <h4 class="mt-2" >Password:</h4>
+                    <input class="w-50" autocomplete="false"  required minlength="8" autocorrect="false" type="password" name="password">
+                    <div><button class="btn btn-outline-warning mt-3 btn-lg text-shadow text-white co-shadow">Create</button></div>
+                </div>
+                
+            </div>
+    </form>
+    </div>
+    
+    <script src="js/create.js"></script>
+    
+</body>
+</html>

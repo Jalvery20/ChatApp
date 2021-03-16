@@ -1,0 +1,32 @@
+<%-include("include/_header")%>
+<link rel="stylesheet" href="css/login.css">
+</head>
+<body>  
+
+    <div id="login" class="container-fluid text-center text-warning center-div">
+        <div id="Cont"  class="container co-shadow  border border-dark  py-5">
+            <div class="title pb-4">
+                <h2 class="font-weight-bold text-shadow">Login for us</h2>
+                <span class="text-shadow text-warning">Log in for the existing user</span>
+                <div id="click" class="container-fluid text-center text-shadow"><a href="/create" class="text-info">Click here to create your account</a></div>
+                <%if(locals.msg){%>
+                    <div id="wrong" class=" text-center text-danger">
+                        <%=msg%>
+                    </div>
+                    <%}%>
+            </div>
+            <form action="/login" method="POST" class="pt-3">
+                <div class="form-group">
+                    <input type="email" class="form-control cos-shadow" required placeholder="email" name="email">
+                    <small style="position: relative;right:26%;" class="form-text text-start text-white text-shadow">Register email address</small>
+                </div>
+                <div class="form-group mt-4">
+                    <input type="password" name="password" required placeholder="password" class="form-control cos-shadow">
+                </div>
+                <div><button type="submit" class="btn btn-outline-warning mt-5 btn-lg text-shadow text-white co-shadow">Log In</button></div>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

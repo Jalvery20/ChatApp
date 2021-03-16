@@ -1,0 +1,23 @@
+html, body {
+	background-image: url("/css/1.jpg");
+	background-repeat: space;
+	
+}
+
+
+a{
+	font-size: 20px;
+}
+a:hover{
+	opacity: .5;
+}
+
+#wrong{
+	text-shadow: 1px 1px 1px black;
+	font-size: 20px;
+
+}
+#login{
+	position: fixed;
+	top:20%;
+}
