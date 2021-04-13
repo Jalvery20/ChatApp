@@ -1,6 +1,9 @@
 {
   "name": "RealTimeChatApp",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.18.4"
+  },
   "scripts": {
     "build":"build server.js",
     "start": "nodemon server.js"
