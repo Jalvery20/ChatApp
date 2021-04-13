@@ -6,8 +6,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "build": "build server.js",
-    "start": "start server.js"
+    "start": "node server"
   },
   "devDependencies": {},
   "dependencies": {
