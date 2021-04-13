@@ -6,7 +6,7 @@
   },
   "scripts": {
     "build":"build server.js",
-    "start": "nodemon server.js"
+    "start": "start server.js"
   },
   "devDependencies": {},
   "dependencies": {
