@@ -4,6 +4,7 @@
   "engines": {
     "node": "12.18.4"
   },
+  "main": "server.js",
   "scripts": {
     "build":"build server.js",
     "start": "start server.js"
