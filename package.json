@@ -2,6 +2,7 @@
   "name": "RealTimeChatApp",
   "version": "1.0.0",
   "scripts": {
+    "build":"build server.js",
     "start": "nodemon server.js"
   },
   "devDependencies": {},
