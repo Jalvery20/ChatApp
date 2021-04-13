@@ -111,4 +111,4 @@ io.on("connection",socket=>{
 
 
 
-http.listen(5000,()=>console.log(`Server is running on http://localhost:${PORT}`))
+http.listen(PORT,()=>console.log(`Server is running on http://localhost:${PORT}`))
