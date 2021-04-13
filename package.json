@@ -6,7 +6,7 @@
   },
   "main": "server.js",
   "scripts": {
-    "build":"build server.js",
+    "build": "build server.js",
     "start": "start server.js"
   },
   "devDependencies": {},
@@ -15,6 +15,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.0",
-    "socket.io": "^4.0.0"
+    "socket.io": "^4.0.0",
+    "ejs": "^3.1.5"
   }
 }
